@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift Bluff · Test drive</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; background: #fafaf7; color: #1c1c1c; }
+      header { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header a { color: #2f7d4f; }
+      main { padding: 2rem 0; }
+      .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1rem; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: 2.5rem;
+        background: linear-gradient(90deg, #ff3cac, #2b86c5);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: low-contrast text, light grey on near-white. */
+      .note { color: #c8c8c8; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .small-link { font-size: 10px; color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: a layout property in a transition. */
+      .bar { height: 0.75rem; width: 30%; background: #2f7d4f; transition: width 0.3s; }
+      .bar:hover { width: 100%; }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+      .edge { margin: 0; padding: 0; max-width: none; }
+    </style>
+  </head>
+  <body>
+    <header><a href="/">Swift Bluff</a></header>
+    <main>
+      <div class="wrap">
+        <h1>A closer look at the list</h1>
+        <p class="note">Swift Bluff keeps a short list in one shared place, and this page is a quiet place to see how it reads.</p>
+        <div class="bar"></div>
+        <p><a class="small-link" href="/">Back to the landing page</a></p>
+      </div>
+      <p class="edge">Every item on the list is read live, so what you see here is what the team sees right now.</p>
+    </main>
+  </body>
+</html>
